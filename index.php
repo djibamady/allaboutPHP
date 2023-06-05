@@ -30,6 +30,7 @@ Si vous ne me croyez pas...
     $fullname = 'Mohamed FOFANA';
     echo '<br>' . $fullname . "<br>";
     echo "Bonjour $fullname et bienvenue sur le site !";
+    echo '<br>Bonjour ' . $fullname . ' et bienvenue sur le site !'; // OK
 
     phpinfo();
     ?>
