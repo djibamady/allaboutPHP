@@ -18,14 +18,18 @@
     <p>Aujourd'hui nous sommes le <?php echo date('d/m/Y h:i:s'); ?>.</p>
     <?php
     // La ligne suivante indique mon âge
-    echo "J'ai 92 ans.";
+    echo "J'ai 92 ans.<br>";
     ?>
     <?php
     /* La ligne suivante indique mon âge
 Si vous ne me croyez pas...
 ... vous avez raison ;o) */
-    echo "J'ai 92 ans.";
+    echo "J'ai 92
+     ans.";
+
+    phpinfo();
     ?>
+
 
     </p>
 </body>
