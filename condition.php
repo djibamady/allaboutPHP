@@ -17,4 +17,9 @@
         $lines++; // $lines = $lines + 1
     }
     ?>
+    <?php
+    for ($lines = 0; $lines <= 2; $lines++) {
+        echo $users[$lines][0] . ' ' . $users[$lines][1] . '<br />';
+    }
+    ?>
 </p>
