@@ -57,3 +57,20 @@ for ($lines = 0; $lines <= 1; $lines++) {
 foreach ($recipes as $recipe) {
     echo $recipe[0]; // Affichera Cassoulet, puis Couscous
 }
+?>
+<?php
+$recipe = [
+    'title' => 'Cassoulet',
+    'recipe' => 'Etape 1 : des flageolets, Etape 2 : ...',
+    'author' => 'mickael.andrieu@exemple.com',
+    'enabled' => true,
+];
+
+foreach ($recipe as $value) {
+    echo $value;
+}
+
+/**
+ * AFFICHE
+ * CassouletEtape 1 : des flageolets, Etape 2 : ...mickael.andrieu@exemple.com1
+ */
