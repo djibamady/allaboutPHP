@@ -11,18 +11,14 @@
 </p>
 <?php
 $lines = 1;
-
-while ($lines <= 100) {
+?>
+<p>EXEMPLE :</p>
+<?php
+while ($lines <= 3) {
     echo 'Je ne dois pas regarder les mouches voler quand j\'apprends le PHP.<br />';
     $lines++; // $lines = $lines + 1
 }
-?>
-<?php
-for ($lines = 0; $lines <= 2; $lines++) {
-    echo $users[$lines][0] . ' ' . $users[$lines][1] . '<br />';
-}
-?>
-<?php
+
 // Une bien meilleure façon de stocker une recette !
 $recipe = [
     'title' => 'Cassoulet',
@@ -30,17 +26,16 @@ $recipe = [
     'author' => 'john.doe@exemple.com',
     'enabled' => true,
 ];
-echo $recipe['title'];
+echo 'Avant :' . $recipe['title'] . '<br>';
 
 //ou
 $recipe['title'] = 'Cassoulet';
 $recipe['recipe'] = 'Etape 1 : des flageolets, Etape 2 : ...';
 $recipe['author'] = 'john.doe@exemple.com';
 $recipe['enable'] = true;
-echo $recipe['title'];
+echo 'Après :' . $recipe['title'] . '<br>';
 
-?>
-<?php
+
 
 /**
  * Déclaration du tableau des recettes
@@ -52,34 +47,30 @@ $recipes = [
 ];
 
 for ($lines = 0; $lines <= 1; $lines++) {
-    echo $recipes[$lines][0];
+    echo $recipes[$lines][0] . '<br>';
 }
-foreach ($recipes as $recipe) {
-    echo $recipe[0]; // Affichera Cassoulet, puis Couscous
-}
-?>
-<?php
-$recipe = [
-    'title' => 'Cassoulet',
+//foreach ($recipes as $recipe) {
+//  echo $recipe[0]; // Affichera Cassoulet, puis Couscous
+//}
+
+$recipe_pates = [
+    'title' => ' FAIRE LES PATES',
     'recipe' => 'Etape 1 : des flageolets, Etape 2 : ...',
     'author' => 'momo.fof@exemple.com',
     'enabled' => true,
 ];
 
-foreach ($recipe as $value) {
-    echo $value;
+foreach ($recipe_pates as $value) {
+    echo '<br>' . $value . '<br>';
 }
 
-/**
- * AFFICHE
- * CassouletEtape 1 : des flageolets, Etape 2 : ...momo.fof@exemple.com1
- */
-$recipe = [
-    'title' => 'Salade Romaine',
-    'recipe' => 'Etape 1 : Lavez la salade ; Etape 2 : euh ...',
-    'author' => 'momo.fof@exemple.com',
-];
 
-foreach ($recipe as $property => $propertyValue) {
+
+foreach ($recipe_pates as $property => $propertyValue) {
     echo '[' . $property . '] vaut ' . $propertyValue . PHP_EOL;
 }
+echo '<br> echo with_print_r<br>';
+echo "<br>";
+echo '<pre>';
+print_r($recipe_pates);
+echo '</pre>';
