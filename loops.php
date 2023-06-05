@@ -54,3 +54,6 @@ $recipes = [
 for ($lines = 0; $lines <= 1; $lines++) {
     echo $recipes[$lines][0];
 }
+foreach ($recipes as $recipe) {
+    echo $recipe[0]; // Affichera Cassoulet, puis Couscous
+}
