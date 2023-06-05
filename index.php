@@ -39,6 +39,9 @@ Si vous ne me croyez pas...
     echo $number . '<br>';
     $number = 10 / 2; // $number prend la valeur 5
     echo $number . '<br>';
+    $number = 10 % 5; // $number prend la valeur 0 car la division tombe juste
+    echo $number . '<br>';
+
 
 
     phpinfo();
