@@ -11,7 +11,7 @@ $recipes = [
         'title' => 'Couscous',
         'recipe' => 'Etape 1 : du riz',
         'author' => 'momo.fof@exemple.com',
-        'is_enabled' => false,
+        'is_enabled' => true,
     ],
     [
         'title' => 'Escalope milanaise',
