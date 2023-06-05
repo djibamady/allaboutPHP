@@ -40,3 +40,17 @@ $recipe['enable'] = true;
 echo $recipe['title'];
 
 ?>
+<?php
+
+/**
+ * Déclaration du tableau des recettes
+ * Chaque élément du tableau est un tableau numéroté (une recette)
+ */
+$recipes = [
+    ['Cassoulet', '[...]', 'mohamed.fofana@exemple.com', true,],
+    ['Couscous', '[...]', 'mohamed.fofana@exemple.com', false,],
+];
+
+for ($lines = 0; $lines <= 1; $lines++) {
+    echo $recipes[$lines][0];
+}
