@@ -62,7 +62,7 @@ foreach ($recipes as $recipe) {
 $recipe = [
     'title' => 'Cassoulet',
     'recipe' => 'Etape 1 : des flageolets, Etape 2 : ...',
-    'author' => 'mickael.andrieu@exemple.com',
+    'author' => 'momo.fof@exemple.com',
     'enabled' => true,
 ];
 
@@ -72,5 +72,14 @@ foreach ($recipe as $value) {
 
 /**
  * AFFICHE
- * CassouletEtape 1 : des flageolets, Etape 2 : ...mickael.andrieu@exemple.com1
+ * CassouletEtape 1 : des flageolets, Etape 2 : ...momo.fof@exemple.com1
  */
+$recipe = [
+    'title' => 'Salade Romaine',
+    'recipe' => 'Etape 1 : Lavez la salade ; Etape 2 : euh ...',
+    'author' => 'momo.fof@exemple.com',
+];
+
+foreach ($recipe as $property => $propertyValue) {
+    echo '[' . $property . '] vaut ' . $propertyValue . PHP_EOL;
+}
