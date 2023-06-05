@@ -32,9 +32,14 @@ Si vous ne me croyez pas...
     echo "Bonjour $fullname et bienvenue sur le site !";
     echo '<br>Bonjour ' . $fullname . ' et bienvenue sur le site !'; // OK
     $number = 2 + 4; // $number prend la valeur 6
-    echo $number;
+    echo $number . '<br>';
     $number = 5 - 1; // $number prend la valeur 4
     echo $number . '<br>';
+    $number = 3 * 5; // $number prend la valeur 15
+    echo $number . '<br>';
+    $number = 10 / 2; // $number prend la valeur 5
+    echo $number . '<br>';
+
 
     phpinfo();
     ?>
