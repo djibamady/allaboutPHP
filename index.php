@@ -12,7 +12,7 @@
     <p>
         Cette ligne a été écrite entièrement en HTML.<br />
         <?php echo ("Celle-ci a été écrite entièrement en PHP.");
-        echo "Ceci est du <strong>texte</strong>";
+        echo "Ceci est du <strong>texte</strong> <br>";
         echo "Cette ligne a été écrite \"uniquement\" en PHP.";
         ?>
     </p>
