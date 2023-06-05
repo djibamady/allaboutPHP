@@ -27,7 +27,8 @@ Si vous ne me croyez pas...
     echo "J'ai 92
      ans.";
     $userAge = 17;
-
+    $fullname = 'Mohamed FOFANA';
+    echo $fullname;
 
     phpinfo();
     ?>
