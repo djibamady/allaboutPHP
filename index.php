@@ -31,7 +31,8 @@ Si vous ne me croyez pas...
     echo '<br>' . $fullname . "<br>";
     echo "Bonjour $fullname et bienvenue sur le site !";
     echo '<br>Bonjour ' . $fullname . ' et bienvenue sur le site !'; // OK
-
+    $number = 2 + 4; // $number prend la valeur 6
+    echo $number;
     phpinfo();
     ?>
 
