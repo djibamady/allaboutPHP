@@ -15,6 +15,12 @@
         echo "Ceci est du <strong>texte</strong> <br>";
         echo "Cette ligne a été écrite \"uniquement\" en PHP.";
         ?>
+    <p>Aujourd'hui nous sommes le <?php echo date('d/m/Y h:i:s'); ?>.</p>
+    <?php
+    // La ligne suivante indique mon âge
+    echo "J'ai 92 ans.";
+    ?>
+
     </p>
 </body>
 
