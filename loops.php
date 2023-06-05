@@ -22,3 +22,21 @@ for ($lines = 0; $lines <= 2; $lines++) {
     echo $users[$lines][0] . ' ' . $users[$lines][1] . '<br />';
 }
 ?>
+<?php
+// Une bien meilleure façon de stocker une recette !
+$recipe = [
+    'title' => 'Cassoulet',
+    'recipe' => 'Etape 1 : des flageolets, Etape 2 : ...',
+    'author' => 'john.doe@exemple.com',
+    'enabled' => true,
+];
+echo $recipe['title'];
+
+//ou
+$recipe['title'] = 'Cassoulet';
+$recipe['recipe'] = 'Etape 1 : des flageolets, Etape 2 : ...';
+$recipe['author'] = 'john.doe@exemple.com';
+$recipe['enable'] = true;
+echo $recipe['title'];
+
+?>
