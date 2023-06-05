@@ -26,6 +26,8 @@ Si vous ne me croyez pas...
 ... vous avez raison ;o) */
     echo "J'ai 92
      ans.";
+    $userAge = 17;
+
 
     phpinfo();
     ?>
