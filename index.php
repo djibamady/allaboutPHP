@@ -28,7 +28,8 @@ Si vous ne me croyez pas...
      ans.";
     $userAge = 17;
     $fullname = 'Mohamed FOFANA';
-    echo $fullname;
+    echo '<br>' . $fullname . "<br>";
+    echo "Bonjour $fullname et bienvenue sur le site !";
 
     phpinfo();
     ?>
