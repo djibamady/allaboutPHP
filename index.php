@@ -98,9 +98,12 @@ Si vous ne me croyez pas...
             break;
 
         default:
-            echo "Désolé, je n'ai pas de message à afficher pour cette note";
+            echo "Désolé, je n'ai pas de message à afficher pour cette note<br>";
     }
-    ?>
+    $userAge = 18;
+    $isAdult = ($userAge >= 18) ? true : false;
+    echo "vous etes" . $isAdult;
+
     phpinfo();
     ?>
 
