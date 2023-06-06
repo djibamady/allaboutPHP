@@ -1,49 +1,41 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-header {
-  background-color: #f2f2f2;
-  padding: 20px;
-}
+/* Style pour la barre de navigation */
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #222;
+  color: white;
+  padding: 1rem;
 }
 
-.logo h1 {
-  margin: 0;
-  font-size: 24px;
-  color: #333;
-}
+/* Style pour les liens de navigation */
 
-.menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.menu li {
-  margin-left: 20px;
-}
-
-.menu li a {
+nav a {
+  color: white;
   text-decoration: none;
-  color: #333;
-  font-size: 18px;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+  margin: 0 0.5rem;
 }
 
-@media (max-width: 768px) {
-  .logo h1 {
-    font-size: 20px;
-  }
-  
-  .menu li a {
-    font-size: 16px;
-  }
+nav a:hover {
+  color: #f0db4f;
+  transform: translateY(-3px);
+}
+
+/* Style pour le logo */
+
+nav h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  transition: all 0.2s ease-in-out;
+}
+
+nav h1:hover {
+  color: #f0db4f;
+  transform: rotateY(360deg);
 }
