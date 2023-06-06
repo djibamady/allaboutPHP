@@ -210,9 +210,9 @@
         </a>
 
         <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Accueil</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Recettes</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="" class="nav-link active" aria-current="page">Accueil</a></li>
+          <li class="nav-item"><a href="home.php" class="nav-link">Recettes</a></li>
+          <li class="nav-item"><a href="index.php" class="nav-link">Contact</a></li>
           <li class="nav-item"><a href="#" class="nav-link">À propos</a></li>
         </ul>
       </header>

@@ -1,4 +1,3 @@
-<!-- contact.php -->
 <!DOCTYPE html>
 <html>
 
@@ -6,31 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de recettes - Formulaire de Contact</title>
+    <title>Site de Recettes - Page d'accueil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
     <?php
+    require_once 'variables.php';
+
     // Validation du formulaire
     if (isset($_POST['email']) &&  isset($_POST['password'])) {
-        if (!empty($_POST['email']) && !empty($_POST['password'])) {
-            foreach ($users as $user) {
-                if (
-                    $user['email'] === $_POST['email'] &&
-                    $user['password'] === $_POST['password']
-                ) {
-                    //Enregistrement 
-                } else {
-                    $errorMessage = sprintf(
-                        'Les informations envoyées ne permettent pas de vous identifier : (%s/%s)',
-                        $_POST['email'],
-                        $_POST['password']
-                    );
-                }
+
+        foreach ($users as $user) {
+            if (
+                $user['email'] === $_POST['email'] &&
+                $user['password'] === $_POST['password']
+            ) {
+                $loggedUser = [
+                    'email' => $user['email'],
+                ];
+            } else {
+                $errorMessage = sprintf(
+                    'Les informations envoyées ne permettent pas de vous identifier : (%s/%s)',
+                    $_POST['email'],
+                    $_POST['password']
+                );
             }
-        } else {
-            echo "Tous les champs doivent être remplis";
         }
     }
     ?>
@@ -65,6 +65,8 @@
             Bonjour <?php echo $loggedUser['email']; ?> et bienvenue sur le site !
         </div>
     <?php endif; ?>
+
+
 </body>
 
 </html>
