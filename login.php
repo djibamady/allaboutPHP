@@ -12,26 +12,25 @@
 
 <body class="d-flex flex-column min-vh-100">
     <?php
-    $users = array();
-    $user['email'] = 'mohamedfofana35700@gmail.com';
-    $user['password'] = '123';
     // Validation du formulaire
     if (isset($_POST['email']) &&  isset($_POST['password'])) {
-        foreach ($users as $user) {
-            if (
-                $user['email'] === $_POST['email'] &&
-                $user['password'] === $_POST['password']
-            ) {
-                $loggedUser = [
-                    'email' => $user['email'],
-                ];
-            } else {
-                $errorMessage = sprintf(
-                    'Les informations envoyées ne permettent pas de vous identifier : (%s/%s)',
-                    $_POST['email'],
-                    $_POST['password']
-                );
+        if (!empty($_POST['email']) && !empty($_POST['password'])) {
+            foreach ($users as $user) {
+                if (
+                    $user['email'] === $_POST['email'] &&
+                    $user['password'] === $_POST['password']
+                ) {
+                    //Enregistrement 
+                } else {
+                    $errorMessage = sprintf(
+                        'Les informations envoyées ne permettent pas de vous identifier : (%s/%s)',
+                        $_POST['email'],
+                        $_POST['password']
+                    );
+                }
             }
+        } else {
+            echo "Tous les champs doivent être remplis";
         }
     }
     ?>
