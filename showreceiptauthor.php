@@ -16,7 +16,8 @@
 
 
         // On récupère tout le contenu de la table recipes
-        $sqlQuery = 'SELECT * FROM recipes';
+        $sqlQuery =
+            'SELECT * FROM recipes WHERE is_enabled = TRUE';
         $recipesStatement = $mysqlClient->prepare($sqlQuery);
         $recipesStatement->execute();
         $recipes = $recipesStatement->fetchAll();
@@ -25,8 +26,8 @@
         foreach ($recipes as $recipe) {
 
         ?>
-            <p><?php echo  htmlspecialchars($recipe['title']) . " est crée par :"; ?>
-                <?php echo  htmlspecialchars($recipe['author']); ?></p>
+            <p><?php echo   strip_tags(htmlspecialchars($recipe['title'])) . " est crée par :"; ?>
+                <?php echo strip_tags(htmlspecialchars($recipe['author'])); ?></p>
         <?php
         }
         ?>
