@@ -23,9 +23,10 @@
 
         // On affiche chaque recette une à une
         foreach ($recipes as $recipe) {
+
         ?>
-            <p><?php echo $recipe['title'] . " est crée par :"; ?>
-                <?php echo $recipe['author']; ?></p>
+            <p><?php echo  htmlspecialchars($recipe['title']) . " est crée par :"; ?>
+                <?php echo  htmlspecialchars($recipe['author']); ?></p>
         <?php
         }
         ?>
